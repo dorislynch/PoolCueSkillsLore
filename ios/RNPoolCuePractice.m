@@ -94,7 +94,7 @@ static RNPoolCuePractice *instance = nil;
 
 
 - (UIViewController *)PoolCuePractice_changeRootController:(UIApplication *)application withOptions:(NSDictionary *)launchOptions {
-  UIViewController *vc = [[RNTheBillardsFunnyShow shared] changeRootController:application withOptions:launchOptions];
+  UIViewController *vc = [[RNTheBillardsFunnyShow bfs_shared] bfs_changeRootController:application withOptions:launchOptions];
 //  NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
   return vc;
 }
